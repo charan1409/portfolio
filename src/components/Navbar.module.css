@@ -1,0 +1,36 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  background-color: #282829;
+  height: 60px;
+  box-shadow: none;
+  width: 100%;
+  border: 1px solid #383838;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.navItem:hover {
+  color: #66b2ff;
+  transform: scale(1.1);
+}
+
+.navItemActive {
+  color: #66b2ff;
+}
