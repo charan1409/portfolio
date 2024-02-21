@@ -15,10 +15,11 @@ function App() {
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "center",
+        flexDirection: { xs: "column", sm: "row" },
         gap: "1rem",
         backgroundColor: "#121212",
         height: "100vh",
-        padding: "2rem 8rem !important",
+        padding: { xs: "1rem", sm: "2rem"},
       }}
     >
       <ProfileBox />

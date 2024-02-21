@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SmartphoneOutlinedIcon from "@mui/icons-material/SmartphoneOutlined";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 
 const Contacts = ({ heading, contactInfo }) => {
   return (
@@ -29,8 +29,8 @@ const Contacts = ({ heading, contactInfo }) => {
           <EmailOutlinedIcon />
         ) : heading === "Phone" ? (
           <SmartphoneOutlinedIcon />
-        ) : heading === "Birthday" ? (
-          <CalendarMonthOutlinedIcon />
+        ) : heading === "Experience" ? (
+          <WorkOutlineOutlinedIcon />
         ) : (
           <LocationOnOutlinedIcon />
         )}

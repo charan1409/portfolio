@@ -25,6 +25,8 @@ const page = () => {
             imageLink={project.imageLink}
             title={project.title}
             description={project.description}
+            repoLink={project.repoLink}
+            webURL={project.webURL}
           />
         ))}
       </Container>

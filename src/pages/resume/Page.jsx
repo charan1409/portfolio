@@ -1,10 +1,12 @@
 import React from "react";
 import { Typography, Box, Container } from "@mui/material";
-import LocalLibraryOutlinedIcon from "@mui/icons-material/LocalLibraryOutlined";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import user from "../../Data";
 
 const Page = () => {
+  const downloadResume = () => {
+    window.open(user.resumeDriveLink, "_blank");
+  };
   return (
     <Container
       sx={{
@@ -23,24 +25,73 @@ const Page = () => {
           color: "#fff",
         }}
       >
-        <LocalLibraryOutlinedIcon
-          sx={{
-            textAlign: "center",
-            padding: ".5rem .7rem",
-            borderRadius: ".5rem",
-            border: "1px solid #383838",
-            boxShadow: "0 0 10px 0 rgba(0,0,0,0.5)",
-            color: "#0059b3",
-            fontSize: "2rem",
-          }}
-        />
         <Typography
           variant="h4"
           component="h4"
           sx={{
-            color: "#fff",
+            color: "#0059b3",
             fontSize: "1.5rem",
             fontWeight: "700",
+            marginTop: "1rem",
+            textDecoration: "underline",
+            cursor: "pointer",
+          }}
+          onClick={downloadResume}
+        >
+          View Resume
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems: "center",
+          gap: "1rem",
+          color: "#fff",
+        }}
+      >
+        <Typography
+          variant="h4"
+          component="h4"
+          sx={{
+            color: "#0059b3",
+            fontSize: "1.5rem",
+            fontWeight: "700",
+            marginTop: "1rem",
+          }}
+        >
+          About
+        </Typography>
+      </Box>
+      <Typography
+        variant="h4"
+        component="h4"
+        sx={{
+          color: "#f5f5f5",
+          fontSize: "1rem",
+          fontWeight: "500",
+          padding: "1rem",
+        }}
+      >
+        {user.about}
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems: "center",
+          gap: "1rem",
+          color: "#fff",
+        }}
+      >
+        <Typography
+          variant="h4"
+          component="h4"
+          sx={{
+            color: "#0059b3",
+            fontSize: "1.5rem",
+            fontWeight: "700",
+            marginTop: "1rem",
           }}
         >
           Education
@@ -100,40 +151,31 @@ const Page = () => {
           </Box>
         </Box>
       ))}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "flex-start",
-          alignItems: "center",
-          gap: "1rem",
-          marginTop: "2rem",
-          color: "#fff",
-        }}
-      >
-        <LocalLibraryOutlinedIcon
+      {user.experiences.length > 0 && (
+        <Box
           sx={{
-            textAlign: "center",
-            padding: ".5rem .7rem",
-            borderRadius: ".5rem",
-            border: "1px solid #383838",
-            boxShadow: "0 0 10px 0 rgba(0,0,0,0.5)",
-            color: "#0059b3",
-            fontSize: "2rem",
-          }}
-        />
-        <Typography
-          variant="h4"
-          component="h4"
-          sx={{
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "center",
+            gap: "1rem",
+            marginTop: "2rem",
             color: "#fff",
-            fontSize: "1.5rem",
-            fontWeight: "700",
           }}
         >
-          Experience
-        </Typography>
-      </Box>
-      {user.experience.map((step, index) => (
+          <Typography
+            variant="h4"
+            component="h4"
+            sx={{
+              color: "#0059b3",
+              fontSize: "1.5rem",
+              fontWeight: "700",
+            }}
+          >
+            Experience
+          </Typography>
+        </Box>
+      )}
+      {user.experiences.map((step, index) => (
         <Box
           key={index}
           sx={{

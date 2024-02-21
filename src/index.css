@@ -25,3 +25,7 @@ code {
   border-radius: 20px;
   background: #555;
 }
+
+a{
+  text-decoration: none;
+}

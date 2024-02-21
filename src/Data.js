@@ -1,58 +1,55 @@
 import spotify from "./components/images/spotify.png";
 import avatar from "./components/images/my-avatar.png";
+import pub from "./components/images/pub.png";
+import OOP from "./components/images/OOP.jpeg";
 
 const userDetails = {
-  name: "Sai Charan",
-  email: "charan@gmail.com",
-  phone: "1234567890",
-  location: "Chennai, India",
-  Birthday: "01/01/2000",
+  name: "K Charan Kumar",
+  email: "charankallempudi20@gmail.com",
+  phone: "+919392756484",
+  location: "Sricity, India",
+  experience: "Fresher",
   profilePic: avatar,
+  about: `I am a Computer Science student at IIT Sricity. I am passionate about web development and I love to learn new things. I am a quick learner and I am always ready to take up new challenges. I am a team player and I love to work in a team. I am a self-motivated person and I am always ready to take up new challenges.`,
+  resumeDriveLink: "https://drive.google.com/file/d/1ofgoG05S-JaOiPu500c6y32-Qb-jDDBg/view?usp=sharing",
   education: [
     {
       label: "Indian Institute of Technology and Technology, Sricity",
-      description: `Bachelor of Technology - BTech, Computer Science and Engineering
+      description: `BTech, Computer Science and Engineering
                         · (2020 - 2024)`,
     },
     {
-      label: "Sasi Junior College",
-      description: "Mathematics, Physics, Chemistry · (2018 - 2020)",
+      label: "Sasi Junior College, Velivennu",
+      description: "Intermediate - MPC · (2018 - 2020)",
     },
     {
-      label: "Sasi High School",
-      description: `· (2016 - 2018)`,
+      label: "Sasi Educational Institutions, Velivennu",
+      description: `High school · (2016 - 2018)`,
     },
   ],
-  experience: [
-    {
-      label: "Microsoft",
-      description: `Software Engineer Intern
-                        · (2020 - 2024)`,
-    },
-    {
-      label: "Google",
-      description: "Software Engineer Intern · (2018 - 2020)",
-    },
-    {
-      label: "Amazon",
-      description: `Software Engineer Intern
-                        · (2016 - 2018)`,
-    },
-  ],
+  experiences: [],
   projects: [
     {
-        title: "Project 1",
-        description: "Web Development",
-        imageLink: spotify,
-        repoLink: "",
+      title: "Spotify Clone",
+      description: "Web Development",
+      imageLink: spotify,
+      repoLink: "https://github.com/charan1409/Spotify-clone-using-Nextjs",
+      webURL: "https://spotify-clone-roan-gamma.vercel.app/",
     },
     {
-        title: "Project 2",
-        description: "Web Development",
-        imageLink: "https://source.unsplash.com/random",
-        repoLink: "",
+      title: "Pack Ur Bags",
+      description: "Web Development",
+      imageLink: pub,
+      repoLink: "https://github.com/charan1409/pack-ur-bags",
+      webURL: "https://frontend-packurbags.onrender.com/",
     },
-  ]
+    {
+      title: "BusHub CLI",
+      description: "Java",
+      imageLink: OOP,
+      repoLink: "https://github.com/charan1409/OOP-s-Java-mini-project",
+    }
+  ],
 };
 
 export default userDetails;
