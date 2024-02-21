@@ -14,7 +14,7 @@ const ProfileBox = () => {
             display: "flex",
             flex: "1",
             alignItems: "center",
-            gap: "20px",
+            gap: "10px",
             justifyContent: "flex-start",
             borderRadius: "1rem",
             border: "1px solid #383838",
@@ -34,7 +34,7 @@ const ProfileBox = () => {
               justifyContent: "center",
               marginTop: "2.5rem",
               marginBottom: "2.5rem",
-              marginLeft: "1rem",
+              marginLeft: ".75rem",
             }}
           >
             <img

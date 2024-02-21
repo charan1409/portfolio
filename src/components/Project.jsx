@@ -17,7 +17,7 @@ const Project = ({ imageLink, title, description, repoLink, webURL }) => {
         display: "flex",
         flexDirection: "column",
         height: "250px !important",
-        width: "30% !important",
+        width: "300px !important",
         background: "none",
         borderRadius: "10px",
         overflow: "hidden",
@@ -33,15 +33,26 @@ const Project = ({ imageLink, title, description, repoLink, webURL }) => {
         },
       }}
     >
-      <img
-        src={imageLink}
-        alt="spotify"
-        style={{
-          height: "250px !important",
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "250px",
           width: "100%",
-          objectFit: "contain",
+          overflow: "hidden",
         }}
-      />
+      >
+        <img
+          src={imageLink}
+          alt={title}
+          style={{
+            height: "100%",
+            width: "100%",
+            objectFit: "cover",
+          }}
+        />
+      </Box>
       <Box>
         <Box
           sx={{
