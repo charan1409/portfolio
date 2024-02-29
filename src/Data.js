@@ -11,7 +11,7 @@ const userDetails = {
   experience: "Fresher",
   profilePic: avatar,
   about: `I am a Computer Science student at IIT Sricity. I am passionate about web development and I love to learn new things. I am a quick learner and I am always ready to take up new challenges. I am a team player and I love to work in a team. I am a self-motivated person and I am always ready to take up new challenges.`,
-  resumeDriveLink: "https://drive.google.com/file/d/1ofgoG05S-JaOiPu500c6y32-Qb-jDDBg/view?usp=sharing",
+  resumeDriveLink: "https://drive.google.com/file/d/1mX65DCW30ww8CZufxDuO_HoL7VL6cFcm/view?usp=sharing",
   education: [
     {
       label: "Indian Institute of Technology and Technology, Sricity",
